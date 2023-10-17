@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>grocery registration</title>
+  <style>
+    * {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body {
+      background-image: url('grocimage.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+    }
+
+    .button-box1 {
+      padding-left: 150px;
+      padding-top: 200px;
+      display: none;
+    }
+
+    .button1 {
+      background-color: transparent;
+      border-radius: 70px;
+      width: 500px;
+      color: green;
+      border-color: green;
+      font-size: 20px;
+    }
+
+    .container {
+      padding-left: 270px;
+      padding-top: 100px;
+      display: none;
+    }
+
+    .button2 {
+      border: none;
+      border-radius: 2px;
+      background-color: green;
+      font-size: 20px;
+      width: 120px;
+      height: 40px;
+    }
+
+    #b2 {
+      float: right;
+      background: transparent;
+      border: none;
+      color: black;
+      font-size: 20px;
+    }
+
+    #b1 {
+      background: transparent;
+      border: none;
+      color: black;
+      font-size: 20px;
+    }
+
+    #tc {
+      background: transparent;
+      border: none;
+      color: black;
+      font-size: 20px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+  <button id="b2" style="text-decoration-line: none;color: black;">About</button>
+  <p id="p1" style="display: none;float:right;padding-top:30px;">log-in if already registered,sign-in if not.This
+    application provides you with the best grocery</p>
+  <button id="b1">Home</button>
+  <div class="button-box1">
+    <button class="button1">
+      <h1>Welcome to<br>Grocery Shopping</h1>
+    </button>
+  </div>
+  <div class="container">
+    <button class="button2"><a href="file:///C:/Users/ANUSHA/Desktop/wmab/sin-up.html" target="_blank"
+        style="text-decoration-line: none;color: black;"><b>Sign-Up</b></a></button>
+    &emsp;<button class="button2"><a href="file:///C:/Users/ANUSHA/Desktop/wmab/log-in.html"
+        style="text-decoration-line: none;color: black;" target="_blank"><b>Log-In</b></a></button>
+  </div>
+  <div class="t&c" style="display:none;">
+    <button id="tc">T&C</button>
+  </div>
+  <p id="p2" style="display: none;">A valid information must be given for registration</p>
+  <script>
+    const btn1 = document.getElementById("b1");
+    btn1.addEventListener("click", function () {
+      if ($("div").first().is(":hidden")) {
+        $("div").slideDown("slow");
+      } else {
+        $("div").hide("slow");
+      }
+    });
+    const btn2 = document.getElementById("b2");
+    btn2.addEventListener("click", function () {
+      if ($("p").first().is(":hidden")) {
+        $("#p1").fadeIn("slow");
+      } else {
+        $("#p1").hide("slow");
+      }
+    });
+    $("#tc").on("click", function () {
+      if ($("#p2").first().is(":hidden")) {
+        $("#p2").show("slow");
+      }
+      else {
+        $("#p2").hide("slow");
+      }
+    });
+  </script>
+</body>
+
+</html>

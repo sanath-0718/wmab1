@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>grocery shopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+     crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+ crossorigin="anonymous"></script>
+   <style>
+    body{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0,0.7)),url('grocery2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+  background-size: cover;
+}
+.button2{
+    width:700px;
+    border-radius: 15px;
+    background: linear-gradient(135deg,green,white,green);
+}
+.button1{
+    padding-left: 420px;
+}
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    width:380px;
+    height: 600px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+   </style>
+</head>
+<body>
+    <div class="button1">
+        <button class="button2"><h1>Grocery Shopping</h1></button>
+    </div>
+    <div class="container">    
+            <form class="was-validated">
+                <div class="index"><h3>Register Here</h3></div>
+               <div class="mb-3 mt-3">
+                        <label for="fame" class="form-label">fullname:</label>
+                        <input type="text" class="form-control" id="fame" placeholder="Enter fullname" name="fullname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                       <div class="mb-3 mt-3">
+                    <label for="mobile" class="form-label">Mobile:</label>
+                    <input type="number" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div> 
+                  <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div> 
+                  <div class="mb-3">
+                    <label for="pwd" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>       
+               Gender:<br>
+               <input type="radio" name="option1" value="male">male<br>
+               <input type="radio" name="option1" value="female">female<br>
+                <div class="button3">
+                    <button><a href="file:///C:/Users/ANUSHA/Desktop/project-G/b2.html" style="text-decoration-line: none;color:black" target="_blank">submit</a> </button>
+                </div>
+             </form>
+                </div>
+</body>
+</html>
+
